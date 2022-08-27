@@ -6,8 +6,8 @@
 import os
 import requests
 
-src = "/home/student-03-ec1bef4a57c1/supplier-data/descriptions/"
-url = "http://34.136.29.87/fruits/"
+src = "/home/student-03-7ef7402584ed/supplier-data/descriptions/"
+url = "http://34.66.70.134/fruits/"
 
 #function to read txt file, convert to json, and post to url
 def process_txt(txt_path):

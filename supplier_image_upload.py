@@ -5,7 +5,7 @@ import requests
 import os
 
 url = "http://localhost/upload/"
-src = "/home/student-03-ec1bef4a57c1/supplier-data/images"
+src = "/home/student-03-7ef7402584ed/supplier-data/images"
 
 for img in os.listdir(src):
   if img.endswith('.jpeg'):

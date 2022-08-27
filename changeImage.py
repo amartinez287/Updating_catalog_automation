@@ -6,7 +6,7 @@ from PIL import Image
 import PIL
 import os
 
-src = "/home/student-03-ec1bef4a57c1/supplier-data/images"
+src = "/home/student-03-7ef7402584ed/supplier-data/images"
 size = (600,400)
 
 #function to change the resolution to 600x400 pixels and change the format to JPEG.
