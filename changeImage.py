@@ -14,7 +14,7 @@ size = (600,400)
 def transform_img(imf_path):
   with Image.open(os.path.join(src,imf_path)) as img:
     im = img.convert('RGB')
-    im.resize(size)
+    im.thumbnail(size)
     base = os.path.splitext(imf_path)[0]
     im.save(os.path.join(src,base + '.jpeg'),"JPEG")
 
