@@ -24,6 +24,18 @@ def generate_email(sender, recipient, subject, body, attachment):
 
   return message
 
+#creates a message object for erros
+def generate_error_report(sender, recipient, subject, body):
+  message = email.message.EmailMessage()
+  message["From"] = sender
+  message["To"] = recipient
+  message["Subject"] = subject
+  message.set_content(body)
+
+  return message
+
+
+
 #sends a message object using SMTP protocal
 def send_email(message):
   mail_server = smtplib.SMTP('localhost')
